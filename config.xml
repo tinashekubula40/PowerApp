@@ -22,5 +22,12 @@
         permission on your app, which PhoneGap requires.
     -->
     <preference name="permissions"                value="none"/>
+	<platform name="android">
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET"/>
+        </config-file>
+      
+    </platform>
 	</widget>
 	
